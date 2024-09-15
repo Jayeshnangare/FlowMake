@@ -236,7 +236,7 @@ function changeTextColor() {
       <div class="sidebar">
         <div class="dashboard" id="dashboard-logo"></div>
 
-        <button class="home-button" on:click={() => navigate('home')}>Home</button>
+        
 
         <div class="elements-section">
          
@@ -269,7 +269,7 @@ function changeTextColor() {
           <button class="uparrow-button" id="uparrow" on:click={addUparrow}>Up Arrow</button>
         </div>
 
-        <button class="download-button" on:click={downloadAsImage}>Download</button>
+        
       </div>
 
       <!-- content to be downloaded-->
