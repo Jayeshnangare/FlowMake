@@ -213,6 +213,7 @@ function changeTextColor() {
 
     <div class="heading">
       <div class="left">
+        <img src="../src/logo.jpeg" alt="Logo" class="logo-image"/>
         <p><marquee>Streamline Your Workflow with Clarity</marquee></p>
         <p>The ultimate tool for transforming complex ideas into <br>clear visual representation. Streamline your workflow <br> with user-friendly, drag and drop flowchart creations<br>& effortlessly design professional diagrams in minute</p>
         <p>Let's start to make your own flowchart</p>
@@ -222,7 +223,6 @@ function changeTextColor() {
       <div class="right" id="flowchart"></div>
       <div class="SocialMedia">
         <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-twitter"></i>
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-github"></i>
       </div>
@@ -404,6 +404,12 @@ function changeTextColor() {
   flex-wrap: wrap;
 }
 
+.logo-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 15%;
+}
+
 .right {
   width: 400px;
   height: 400px;
@@ -413,7 +419,7 @@ function changeTextColor() {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 6.5%;
+  margin-top: 4.8%;
   margin-right: 3%;
   position: relative;
 }
@@ -430,7 +436,7 @@ function changeTextColor() {
 }
 
 /*left*/
-.left p:nth-child(1) {
+.left p:nth-child(2) {
   color: orange;
   font-size: 30px;
   letter-spacing: 1px;
@@ -439,10 +445,10 @@ function changeTextColor() {
   overflow: hidden;
   box-sizing: border-box;
   animation: marquee 15s linear infinite;
-  margin-top: 2%;
+  margin-top: 8%;
 }
 
-.left p:nth-child(2) {
+.left p:nth-child(3) {
   color: white;
   font-size: 21px;
   letter-spacing: 1px;
@@ -455,7 +461,7 @@ function changeTextColor() {
   color: white;
 }
 
-.left p:nth-child(3) {
+.left p:nth-child(4) {
   color: orange;
   font-size: 30px;
   font-style: italic;
