@@ -223,6 +223,7 @@ function changeTextColor() {
       <div class="right" id="flowchart"></div>
       <div class="SocialMedia">
         <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-linkedin"></i>
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-github"></i>
       </div>
