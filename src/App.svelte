@@ -26,27 +26,7 @@
     console.log('Component mounted');
   });
 
-  // download the flowchart
-  function downloadAsImage() {
-    const element = document.getElementById('content-to-download');
 
-    const paragraphs = element.querySelectorAll('p');
-    paragraphs.forEach(p => {
-      p.style.display = 'none';
-    });
-
-    html2canvas(element).then(canvas => {
-      paragraphs.forEach(p => {
-        p.style.display = '';
-      });
-
-      const url = canvas.toDataURL('image/png');
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = 'download.png';
-      a.click();
-    });
-  }
 
   // add a rectangle shape
   function addRectangle() {
