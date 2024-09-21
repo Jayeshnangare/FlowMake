@@ -169,14 +169,19 @@ function handleMouseDown(index, action, type) {
     };
   }
 
+  let selectedColor = '';
   let selectedColor2 = '';
 
-// Function to change background color of divs
+// Function to change background color of text
 function changeTextColor() {
     let divs = document.querySelectorAll('.content div');
     divs.forEach(div => {
         div.style.color = selectedColor2;
     });
+
+// Function to change background color of divs
+function changeShapeColor() {
+    };
 }
 
 </script>
@@ -220,10 +225,25 @@ function changeTextColor() {
         <button class="home-button" on:click={() => navigate('home')}>Home</button>
 
         <div class="elements-section">
-         
+        
         Text Color
         <select bind:value={selectedColor2} on:change={changeTextColor}>
           <option value="">Change Text color</option>
+          <option value="#FFFFFF">White</option>
+          <option value="#000000">Black</option>
+          <option value="#FF0000">Red</option>
+          <option value="#00FF00">Green</option>
+          <option value="#0000FF">Blue</option>
+          <option value="#FFFF00">Yellow</option>
+          <option value="#800080">Purple</option>
+          <option value="#FFA500">Orange</option>
+          <option value="#808080">Gray</option>
+        </select>
+
+        <br>
+        Shape Color
+        <select bind:value={selectedColor} on:change={changeShapeColor}>
+          <option value="">Change Shape color</option>
           <option value="#FFFFFF">White</option>
           <option value="#000000">Black</option>
           <option value="#FF0000">Red</option>
@@ -554,7 +574,7 @@ function changeTextColor() {
 
 .dashboardbody .elements-section {
   background-color: #ADD8E6;
-    height: 550px;
+    height: 580px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
