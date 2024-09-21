@@ -217,7 +217,7 @@ function changeTextColor() {
       <div class="sidebar">
         <div class="dashboard" id="dashboard-logo"></div>
 
-        
+        <button class="home-button" on:click={() => navigate('home')}>Home</button>
 
         <div class="elements-section">
          
