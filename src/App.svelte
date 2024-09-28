@@ -27,6 +27,28 @@
   });
 
 
+   // download the flowchart
+   function downloadAsImage() {
+    const element = document.getElementById('content-to-download');
+
+    const paragraphs = element.querySelectorAll('p');
+    paragraphs.forEach(p => {
+      p.style.display = 'none';
+    });
+
+    html2canvas(element).then(canvas => {
+      paragraphs.forEach(p => {
+        p.style.display = '';
+      });
+
+      const url = canvas.toDataURL('image/png');
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'download.png';
+      a.click();
+    });
+  }
+
 
   // add a rectangle shape
   function addRectangle() {
@@ -169,19 +191,19 @@ function handleMouseDown(index, action, type) {
     };
   }
 
-  let selectedColor = '';
   let selectedColor2 = '';
+  let selectedColor = '';
 
-// Function to change background color of text
+  function changeShapeColor(){
+
+  }
+
+// Function to change background color of divs
 function changeTextColor() {
     let divs = document.querySelectorAll('.content div');
     divs.forEach(div => {
         div.style.color = selectedColor2;
     });
-
-// Function to change background color of divs
-function changeShapeColor() {
-    };
 }
 
 </script>
@@ -269,7 +291,7 @@ function changeShapeColor() {
           <button class="downarrow-button" id="downarrow" on:click={addDownarrow}>Down Arrow</button>
           <button class="uparrow-button" id="uparrow" on:click={addUparrow}>Up Arrow</button>
         </div>
-
+        <button class="download-button" on:click={downloadAsImage}>Download</button>
         
       </div>
 
@@ -530,7 +552,7 @@ function changeShapeColor() {
   margin-bottom: 2%;
   border-radius: 10px;
   flex-direction: column;
-  height: 930px;
+  height: 970px;
   font-family: Arial, sans-serif;
 }
 
