@@ -195,7 +195,10 @@ function handleMouseDown(index, action, type) {
   let selectedColor = '';
 
   function changeShapeColor(){
-
+    let divs = document.querySelectorAll('.content div');
+    divs.forEach(div => {
+      div.style.backgroundColor = selectedColor;
+    })
   }
 
 // Function to change background color of divs
