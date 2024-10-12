@@ -210,7 +210,7 @@ function changeShapeColor() {
         <i class="fa-brands fa-facebook-f"></i>
         <i class="fa-brands fa-linkedin"></i>
         <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-github"></i>
+        <a href= "https://github.com/Jayeshnangare"><i class="fa-brands fa-github"></i></a>
       </div>
     </div>
   </div>
