@@ -233,9 +233,9 @@ function changeTextColor() {
       <div class="right" id="flowchart"></div>
       <div class="SocialMedia">
         <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-github"></i>
+        <a href="https://www.linkedin.com/in/jayesh-nangare-637661255/?originalSubdomain=in"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/jaynangare_777/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/Jayeshnangare"> <i class="fa-brands fa-github"></i></a>
       </div>
     </div>
   </div>
@@ -553,7 +553,6 @@ function changeTextColor() {
   display: flex;
   margin-top: 2%;
   margin-bottom: 2%;
-  border-radius: 10px;
   flex-direction: column;
   height: 970px;
   font-family: Arial, sans-serif;
