@@ -198,7 +198,7 @@ function changeShapeColor() {
 
     <div class="heading">
       <div class="left">
-        <img src="../src/logo.jpeg" alt="Logo" class="logo-image"/>
+        <img src="./logo.jpeg" alt="Logo" class="logo-image"/>
         <p><marquee>Streamline Your Workflow with Clarity</marquee></p>
         <p>The ultimate tool for transforming complex ideas into <br>clear visual representation. Streamline your workflow <br> with user-friendly, drag and drop flowchart creations<br>& effortlessly design professional diagrams in minute</p>
         <p>Let's start to make your own flowchart</p>
